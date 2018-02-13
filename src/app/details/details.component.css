@@ -1,0 +1,50 @@
+table {
+    font-family: arial;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 400px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+td {
+	width: 25%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .details {
+        float: left;
+        width: 45%;
+    }
+
+    .tasks {
+        float: right;
+        width: 45%;
+    }
+}
+
+.backBtn {
+    margin: 15px 0px 15px 10px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    color: #5b5b5b;
+    background-color:##dddddd;
+    border: none;
+    border-radius: 15px;
+}
+
+.backBtn:hover {
+    background-color: #5b5b5b;
+    color: #fff;
+}
+

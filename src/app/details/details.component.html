@@ -1,0 +1,74 @@
+<div class="details">
+	<h2>Doctors info</h2>
+
+	<div *ngIf="doctor">
+		
+		<h3>Personal info</h3>
+		<table>
+			<tr>
+				<td>ID</td><th>{{doctor.id}} </th>
+			</tr>
+			<tr>
+				<td>Name</td><th>{{doctor.name}} </th>
+			</tr>
+			<tr>
+				<td>Username</td><th>{{doctor.username}} </th>
+			</tr>
+			<tr>
+				<td>Email</td><th>{{doctor.email}} </th>
+			</tr>
+			<tr>
+				<td>Phone</td><th>{{doctor.phone}} </th>
+			</tr>
+			<tr>
+				<td>Website</td><th>{{doctor.website}} </th>
+			</tr>
+		</table>
+
+		<h3>Address</h3>
+		<table>
+			<tr>
+				<td>Street</td><th>{{doctor.address.street}}</th>
+			</tr>
+			<tr>
+				<td>Suite</td><th>{{doctor.address.suite}}</th>
+			</tr>
+			<tr>
+				<td>City</td><th>{{doctor.address.city}}</th>
+			</tr>
+			<tr>
+				<td>Zipcode</td><th>{{doctor.address.zipcode}}</th>
+			</tr>
+			<tr>
+				<td>Geo</td><th>{{doctor.address.geo.lat}}, {{doctor.address.geo.lng}}</th>
+			</tr>	
+		</table>
+
+		<h3>Company</h3>
+		<table>
+			<tr>
+				<td>Name</td><th>{{doctor.company.name}} </th>
+			</tr>
+			<tr>
+				<td>Catch Phrase</td><th>{{doctor.company.catchPhrase}}</th>
+			</tr>
+			<tr>
+				<td>BS</td><th>{{doctor.company.bs}}</th>
+			</tr>
+		</table>
+
+	</div>
+
+	<button class="backBtn" (click)="goBack()">Back</button>
+
+</div>
+
+
+<div class="tasks">
+	<app-tasks></app-tasks>	
+</div>
+
+
+
+
+		

@@ -1,0 +1,27 @@
+table {
+    font-family: arial;
+    border-collapse: collapse;
+    min-width: 400px;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.id {
+	width: 10%;
+}
+
+.title {
+	width: 70%;
+}
+
+.completed {
+	width: 20%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

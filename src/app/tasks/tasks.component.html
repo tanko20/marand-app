@@ -1,0 +1,20 @@
+
+<h2>Doctors tasks</h2>
+
+<div *ngIf="tasks != []">
+
+	<table>
+		<tr>
+			<th class="id">ID</th>
+			<th class="title">Title</th>
+			<th class="completed">Completed</th>
+		</tr>
+
+		<tr *ngFor="let task of tasks">
+			<td clas="id">{{task.id}}</td>
+			<td class="title">{{task.title}}</td>
+			<td class="completed">{{task.completed}}</td>
+		</tr>
+	</table>
+
+</div>
